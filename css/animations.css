@@ -1,0 +1,252 @@
+/* Global Transitions */
+* {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Header Animations */
+.header_section {
+	animation: fadeInDown 0.8s ease-out;
+}
+
+.navbar-brand {
+	position: relative;
+	overflow: hidden;
+}
+
+.navbar-brand::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #f7c17b;
+	transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+	width: 100%;
+}
+
+.nav-link {
+	position: relative;
+}
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background: #f7c17b;
+	transition: all 0.3s ease;
+	transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
+
+/* Hero Section Animations */
+.hero_section {
+	animation: fadeIn 1s ease-out;
+}
+
+.hero_section .detail-box h1 {
+	animation: slideInLeft 1s ease-out;
+}
+
+.hero_section .detail-box p {
+	animation: slideInLeft 1.2s ease-out;
+}
+
+.hero_section .img-box {
+	animation: slideInRight 1s ease-out;
+}
+
+/* Service Box Animations */
+.service_section .box {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service_section .box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service_section .box .img-box {
+	overflow: hidden;
+}
+
+.service_section .box .img-box img {
+	transition: transform 0.5s ease;
+}
+
+.service_section .box:hover .img-box img {
+	transform: scale(1.1);
+}
+
+/* About Section Animations */
+.about_section .detail-box {
+	animation: slideInLeft 1s ease-out;
+}
+
+.about_section .img-box {
+	animation: slideInRight 1s ease-out;
+	overflow: hidden;
+}
+
+.about_section .img-box img {
+	transition: transform 0.5s ease;
+}
+
+.about_section .img-box:hover img {
+	transform: scale(1.05);
+}
+
+/* Contact Form Animations */
+.contact_section form {
+	animation: fadeInUp 1s ease-out;
+}
+
+.contact_section input,
+.contact_section textarea {
+	transition: all 0.3s ease;
+}
+
+.contact_section input:focus,
+.contact_section textarea:focus {
+	transform: translateY(-2px);
+}
+
+.contact_section button {
+	position: relative;
+	overflow: hidden;
+}
+
+.contact_section button::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.6s ease, height 0.6s ease;
+}
+
+.contact_section button:hover::before {
+	width: 300px;
+	height: 300px;
+}
+
+/* Social Box Animations */
+.social-box .box a {
+	transition: all 0.3s ease;
+}
+
+.social-box .box a:hover {
+	transform: translateY(-5px) rotate(360deg);
+}
+
+/* Footer Animations */
+.footer_section {
+	animation: fadeInUp 1s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Scroll Animations */
+.scroll-animation {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.6s ease;
+}
+
+.scroll-animation.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Loading Animation */
+.loading {
+	animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+	.hero_section .detail-box h1,
+	.hero_section .detail-box p,
+	.hero_section .img-box {
+		animation: fadeIn 1s ease-out;
+	}
+
+	.about_section .detail-box,
+	.about_section .img-box {
+		animation: fadeIn 1s ease-out;
+	}
+}
