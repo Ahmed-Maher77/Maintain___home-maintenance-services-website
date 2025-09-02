@@ -53,7 +53,7 @@ A responsive and professional web application for a home maintenance and repair 
 ## 👀 Website Preview
 
 <a href="https://ahmed-maher77.github.io/Maintain___home-maintenance-services-website/" title="demo">
-  <img src="uploaded-img-on-github-readme" alt="website preview" width="400">
+  <img src="https://github.com/user-attachments/assets/95c5d3ca-b5b7-4678-9beb-ddc9730efb3a" alt="website preview - UI Mockup" width="400">
 </a>
 
 ---
@@ -62,10 +62,10 @@ A responsive and professional web application for a home maintenance and repair 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/maintain-home-services.git
+git clone https://github.com/Ahmed-Maher77/Maintain___home-maintenance-services-website.git
 
 # Navigate into the project directory
-cd maintain-home-services
+cd Maintain___home-maintenance-services-website
 
 # Open index.html in your browser
 ```
