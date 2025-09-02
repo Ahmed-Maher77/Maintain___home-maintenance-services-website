@@ -29,6 +29,14 @@ body {
 	padding-bottom: 120px;
 }
 
+.header_section .contact_nav {
+	display: flex;
+    flex-wrap: wrap;
+}
+.header_section .contact_nav a i {
+	margin-right: 5px;
+}
+
 .heading_container {
 	display: -webkit-box;
 	display: -ms-flexbox;
